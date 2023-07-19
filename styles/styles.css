@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Work+Sans:wght@400;700&display=swap");
+@import url("./header/header.css");
+@import url("./header/logo.css");
+@import url("./header/menu.css");
+@import url("./hero/hero.css");
+@import url("./partners/partners.css");
+@import url("./features/features.css");
+@import url("./team/team.css");
+@import url("./footer/footer.css");
+@import url("./btn/btn.css");
+@import url("./portfolio/portfolio.css");
+@import url("./servicess/services.css");
+@import url("./contact/contact.css");
+
+:root {
+  --green: #74c69d;
+  --white: #ffff;
+  --white-op: rgba(255, 255, 255, 0.5);
+  --black-op: rgba(0, 0, 0, 0.75);
+  --black: #000000;
+  --black-submit: rgba(0, 0, 0, 0.9);
+  --font-1: "Crimson Text";
+  --font-2: "Work Sans";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background: var(--white); */
+  color: var(--white);
+  font-family: var(--font-1);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.spacing {
+  padding: 1em;
+  background-color: white;
+}
+
+@media (min-width: 1200px) {
+  /* body {
+    margin: 4em;
+  } */
+}

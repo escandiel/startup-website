@@ -1,0 +1,16 @@
+header {
+  /*margin: 1em;*/
+  background-color: var(--green);
+  box-sizing: border-box;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3em 2em;
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding: 6em;
+  }
+}

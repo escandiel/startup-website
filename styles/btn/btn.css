@@ -1,0 +1,84 @@
+.btn-hero,
+.btn-more {
+  width: 170px;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em;
+  font-family: var(--font-2);
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.btn-desktop_container {
+  display: none;
+}
+
+.btn-hero:active,
+.btn-more:active {
+  transform: scale(0.96);
+}
+
+.btn-hero {
+  /* background-color: var(--white); */
+  margin-top: 1em;
+}
+
+.btn-more {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn_submit {
+  width: 335px;
+  height: 48px;
+  background: var(--black-submit);
+  color: var(--white);
+  font-family: var(--font-2);
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.5s;
+}
+
+.btn_submit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn_submit span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn_submit:hover span {
+  padding-right: 25px;
+}
+
+.btn_submit:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+@media (min-width: 1200px) {
+  .btn-more_mobile {
+    display: none;
+  }
+
+  .btn-desktop_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn_submit {
+    width: 575px;
+    height: 48px;
+  }
+}

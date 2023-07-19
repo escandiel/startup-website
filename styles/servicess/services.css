@@ -1,0 +1,140 @@
+.services,
+.services-container {
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services-title {
+  font-family: var(--font-2);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--green);
+  padding: 1.5em 0 0.5em 0;
+}
+
+.services-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0.5em;
+}
+
+.services-par {
+  width: 335px;
+  height: 85px;
+  font-family: var(--font-2);
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 339px;
+  height: 542px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.8);
+  padding: 0.5em;
+  margin: 0.6em;
+}
+
+.card-spacing {
+  padding: 1em;
+}
+
+.plan {
+  padding: 2em 0 0.5em 0;
+  font-family: var(--font-2);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.price-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+  font-family: var(--font-2);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.frequency {
+  font-family: var(--font-2);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--black-op);
+  margin: 0.5em;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description-par {
+  padding: 1em;
+  font-family: var(--font-2);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 125%;
+  text-align: center; /*usada para definir como as linhas do texto se dispoem  */
+  color: var(--black-op);
+}
+
+.benefits {
+  padding: 2.5em 1em;
+}
+
+.card-items {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-2);
+  margin: 0.5em;
+}
+
+.card-img {
+  margin-right: 0.5em;
+}
+
+.card-btn {
+  padding: 1em;
+}
+
+@media (min-width: 1000px) {
+  .services-title {
+    padding: 1.5em 0 0 0;
+  }
+
+  .services-subtitle {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .services-par {
+    width: 411px;
+    height: 60px;
+    padding: 0;
+    margin-bottom: 4em;
+  }
+
+  .card-plans {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-spacing {
+    margin: 1.5em;
+  }
+}

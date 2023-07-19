@@ -1,0 +1,114 @@
+.menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-2);
+  font-size: 20px;
+  gap: 40px;
+  margin: 3em 0;
+}
+
+.item-action {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+#btn-mobile {
+  display: block;
+  padding: 2em;
+  /* font-family: var(--font-2);
+  font-size: 24px;
+  font-weight: 500;
+  gap: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: aliceblue; */
+}
+
+#menuWrap {
+  display: block;
+  position: absolute; /*acima de qualquer elemento na tela */
+  width: 100%;
+  background: var(--green);
+  top: 70px;
+  right: 0px;
+  margin: 0;
+  padding: 1.5em 0;
+  transition: 0.5s;
+  z-index: 1000;
+  height: 0; /*altura vai do 0 ate o height da nav.active */
+  visibility: hidden;
+  overflow-y: hidden;
+}
+
+#nav.active #menuWrap {
+  height: calc(100vh - 70px);
+  visibility: visible;
+  overflow-y: auto;
+}
+
+#btn-mobile {
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+#hamburger {
+  display: block;
+  border-top: 2px solid #ffff;
+  width: 20px;
+}
+
+#hamburger::after,
+#hamburger::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #ffff;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: relative;
+}
+
+#nav.active #hamburger {
+  border-top-color: transparent;
+}
+
+#nav.active #hamburger::before {
+  transform: rotate(135deg);
+}
+
+#nav.active #hamburger::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
+
+@media (min-width: 1200px) {
+  #menuWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    width: 45%;
+    background: none;
+    /* padding: 0 4em; */
+    transition: none;
+    visibility: visible;
+    overflow-y: visible;
+  }
+
+  .menu-item {
+    margin: 1em;
+  }
+
+  .item-action {
+    border: none;
+  }
+
+  #btn-mobile {
+    display: none;
+  }
+}

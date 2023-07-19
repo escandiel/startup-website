@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>😸 StartUp</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          src="img/header/logo-header.svg"
+          class="logo-img"
+          alt="logo da empresa"
+        />
+      </div>
+      <nav class="top-nav" id="nav">
+        <button id="btn-mobile">
+          <span id="hamburger"></span>
+        </button>
+        <ul class="menu-wrap" id="menuWrap">
+          <li class="menu-item">
+            <a class="item-action" href="index.html">Home</a>
+          </li>
+          <li class="menu-item">
+            <a class="item-action" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a class="item-action" href="services.html">Services</a>
+          </li>
+          <li class="menu-item">
+            <a class="item-action" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact">
+      <div class="contact-container">
+        <h1 class="contact-title">Contact Us</h1>
+        <h2 class="contact-subtitle">
+          Lorem ipsum, dolor sit amet consectetur<br />
+          adipisicing elit.
+        </h2>
+        <!-- <div id="mapid"></div> -->
+      </div>
+
+      <div class="contact-action">
+        <div class="map">
+          <div id="mapid"></div>
+        </div>
+
+        <div class="contact-form">
+          <span class="contact-span">Name</span>
+          <input type="text" class="input_form" placeholder="Your name..." />
+          <span class="contact-span">Email</span>
+          <input type="text" class="input_form" placeholder="Your email..." />
+          <span class="contact-span">Message</span>
+          <input type="text" class="input_form-msg" />
+          <button class="btn_submit"><span>Submit</span></button>
+        </div>
+        <div class="card-spacing"></div>
+      </div>
+    </section>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="contactMap.js"></script>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="https://www.facebook.com">
+              <img
+                src="img/footer/fb-icon.svg"
+                class="footer-img"
+                alt="ícone do Facebook"
+              />
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="https://www.instagram.com">
+              <img
+                src="img/footer/insta-icon.svg"
+                class="footer-img"
+                alt="ícone do Instagram"
+              />
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="https://www.twitter.com">
+              <img
+                src="img/footer/twt-icon.svg"
+                class="footer-img"
+                alt="ícone do Twitter"
+              />
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="https://www.pinterest.com">
+              <img
+                src="img/footer/pin-icon.svg"
+                class="footer-img"
+                alt="ícone do Pinterest"
+              />
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="https://www.tiktok.com">
+              <img
+                src="img/footer/tiktok-icon.svg"
+                class="footer-img"
+                alt="ícone do TikTok"
+              />
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="https://www.whatsapp.com">
+              <img
+                src="img/footer/wpp-icon.svg"
+                class="footer-img"
+                alt="ícone do Whatsapp"
+              />
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="https://www.youtube.com">
+              <img
+                src="img/footer/yt-icon.svg"
+                class="footer-img"
+                alt="ícone do Youtube"
+              />
+            </a>
+          </li>
+        </ul>
+        <p class="footer-par">© Start, 2022. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
