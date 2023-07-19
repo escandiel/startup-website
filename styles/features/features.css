@@ -1,12 +1,12 @@
 .features {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   background-color: var(--white);
 }
 
 .features-2 {
   width: 100%;
-  height: 110vh;
+  height: 80vh;
   background-color: var(--white);
 }
 
